@@ -1,0 +1,22 @@
+#%RAML 1.0
+title: myProduct-api
+
+baseUri: http://localhost:8081/products
+
+/products:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+
+              {
+                "product_type": "pres MacBook Pro",
+                "quantity": 200,
+                "isAvailable": "Yes",
+                "product_detail": "Dell 1500 series",
+                "Price": 1000,
+                "purchase_date": "2029-07-22 10:00:00",
+                "product_name": "Apple"
+              }

@@ -1,0 +1,16 @@
+http:
+  port: "8083"
+ 
+  
+
+db:
+  host: "localhost"
+  port: "3306"
+  user: "root"
+ 
+  
+
+dbc:
+  host: "mysql-83829-0.cloudclusters.net"
+  port: "18454"
+  user: "Betty"

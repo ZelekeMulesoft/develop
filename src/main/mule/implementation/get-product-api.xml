@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="get:\products:myproduct-api-config" doc:id="01f7fcfc-8cd4-4e39-b3e8-77e07df7517b" >
+		<ee:transform doc:name="Transform Message" doc:id="c8316e2e-1095-4ff2-8716-ec7f1bf9c644" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+  product_type: "pres MacBook Pro",
+  quantity: 200,
+  isAvailable: "Yes",
+  product_detail: "Dell 1500 series",
+  Price: 1000,
+  purchase_date: "2029-07-22 10:00:00",
+  product_name: "Apple"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>
